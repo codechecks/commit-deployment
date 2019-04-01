@@ -9,7 +9,7 @@
   ],
   "repository": "codechecks/commit-deployment",
   "author": "Chris Kaczor <chris@kaczor.io>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -48,8 +48,7 @@
   "peerDependencies": {
     "@codechecks/client": "^0.0.48"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
   },
