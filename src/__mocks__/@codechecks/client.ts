@@ -1,5 +1,4 @@
 import * as CC from "@codechecks/client";
-import { join } from "path";
 
 export const codechecks: Partial<typeof CC.codechecks> = {
   report: jest.fn(),
@@ -9,7 +8,7 @@ export const codechecks: Partial<typeof CC.codechecks> = {
   saveCollection: jest.fn(),
   isPr: jest.fn(),
   context: {
-    workspaceRoot: join(__dirname, "..", ".."),
+    workspaceRoot: "/codechecks",
   } as any,
   getArtifactLink: jest.fn(),
   getPageLink: jest.fn(),

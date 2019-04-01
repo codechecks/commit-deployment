@@ -56,7 +56,7 @@ describe("commit-deployment", () => {
   "calls": Array [
     Array [
       "@codechecks/commit-deployment",
-      "/Users/krzkaczor/Workspace/codechecks/commit-deployment/src/dist",
+      "/codechecks/dist",
     ],
   ],
   "results": Array [
