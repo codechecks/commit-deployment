@@ -1,7 +1,7 @@
 import { codechecks } from "@codechecks/client";
 import { join } from "path";
 
-const ARTIFACT_KEY = "@codechecks/commit-deployment";
+const ARTIFACT_KEY = "commit-deployment";
 
 export async function commitDeployment(_options: Options): Promise<void> {
   const options = normalizeOptions(_options);
@@ -10,7 +10,7 @@ export async function commitDeployment(_options: Options): Promise<void> {
   await codechecks.success({
     name: "Commit Deployment",
     shortDescription: "Deployment ready",
-    detailsUrl: codechecks.getPageLink("build", options.rootFile),
+    detailsUrl: codechecks.getPageLink(ARTIFACT_KEY, options.rootFile),
   });
 }
 

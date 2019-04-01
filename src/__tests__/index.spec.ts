@@ -20,7 +20,7 @@ describe("commit-deployment", () => {
 [MockFunction] {
   "calls": Array [
     Array [
-      "build",
+      "commit-deployment",
       "index.html",
     ],
   ],
@@ -55,7 +55,7 @@ describe("commit-deployment", () => {
 [MockFunction] {
   "calls": Array [
     Array [
-      "@codechecks/commit-deployment",
+      "commit-deployment",
       "/codechecks/dist",
     ],
   ],
