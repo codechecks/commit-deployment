@@ -1,7 +1,7 @@
 import { codechecks } from "@codechecks/client";
 import { join } from "path";
 
-const ARTIFACT_KEY = "commit-deployment";
+const ARTIFACT_KEY = "deploy";
 
 export async function commitDeployment(_options: Options): Promise<void> {
   const options = normalizeOptions(_options);
