@@ -6,7 +6,7 @@ const ARTIFACT_KEY = "deploy";
 export async function commitDeployment(_options: Options): Promise<void> {
   const options = normalizeOptions(_options);
 
-  await codechecks.saveCollection(ARTIFACT_KEY, options.buildPath);
+  await codechecks.saveDirectory(ARTIFACT_KEY, options.buildPath);
   await codechecks.success({
     name: "Commit Deployment",
     shortDescription: "Deployment ready",
