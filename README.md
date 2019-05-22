@@ -23,22 +23,14 @@ yarn add --dev @codechecks/commit-deployment
 
 ## Usage
 
-Add to your `codechecks.json` file:
+Add to your `codechecks.yml` file:
 
-<!-- prettier-ignore -->
-```json5
-{
-  "checks": [
-    {
-      "name": "commit-deployment",
-      "options": {
-        "buildPath": "./dist"
-      }
-    }
-
-    // ...
-  ]
-}
+```yml
+checks:
+  - name: commit-deployment
+    options:
+      buildPath: "./dist"
+  # ...
 ```
 
 With each pull request you will get a link do current deployment of your frontend app.

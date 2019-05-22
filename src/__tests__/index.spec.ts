@@ -51,7 +51,7 @@ describe("commit-deployment", () => {
   ],
 }
 `);
-    expect(codechecks.saveCollection).toMatchInlineSnapshot(`
+    expect(codechecks.saveDirectory).toMatchInlineSnapshot(`
 [MockFunction] {
   "calls": Array [
     Array [
