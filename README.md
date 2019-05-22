@@ -23,22 +23,14 @@ yarn add --dev @codechecks/commit-deployment
 
 ## Usage
 
-Add to your `codechecks.json` file:
+Add to your `codechecks.yml` file:
 
-<!-- prettier-ignore -->
-```json5
-{
-  "checks": [
-    {
-      "name": "commit-deployment",
-      "options": {
-        "buildPath": "./dist"
-      }
-    }
-
-    // ...
-  ]
-}
+```yml
+checks:
+  - name: commit-deployment
+    options:
+      buildPath: "./dist"
+  # ...
 ```
 
 With each pull request you will get a link do current deployment of your frontend app.
@@ -52,7 +44,8 @@ With each pull request you will get a link do current deployment of your fronten
 ```typescript
 interface Options {
   buildPath: string;
-  rootFile?: string;
+  rootFile?: string; // defaults to index.html
+  name?: string; // defaults to Commit Deployment
 }
 ```
 
@@ -66,6 +59,12 @@ Relative (to current codechecks file) path to build that is supposed to be deplo
 optional `string`<br>\
 Default: `index.html`<br>\
 File considered as root in your build. Attached link will point directly to it.
+
+##### name
+
+optional `string`<br>\
+Defaults: `Commit Deployment`<br>\
+Specify the name for check. Might be useful in monorepos.
 
 ## Contributing
 
