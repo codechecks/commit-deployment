@@ -44,8 +44,7 @@ With each pull request you will get a link do current deployment of your fronten
 ```typescript
 interface Options {
   buildPath: string;
-  rootFile?: string; // defaults to index.html
-  name?: string; // defaults to Commit Deployment
+  rootFile?: string;
 }
 ```
 
@@ -59,12 +58,6 @@ Relative (to current codechecks file) path to build that is supposed to be deplo
 optional `string`<br>\
 Default: `index.html`<br>\
 File considered as root in your build. Attached link will point directly to it.
-
-##### name
-
-optional `string`<br>\
-Defaults: `Commit Deployment`<br>\
-Specify the name for check. Might be useful in monorepos.
 
 ## Contributing
 
